@@ -67,7 +67,7 @@ Type --help for more information.
 lish@lab-jupyter-m:~$ 
 ```
 
-- Now, we check the Scala and Spark version of Apache toree. In our case, we use the lastest releases **v0.2.0-incubating-rc3** https://github.com/apache/incubator-toree/releases. We can find these information in [Makefile](https://github.com/apache/incubator-toree/blob/v0.2.0-incubating-rc3/Makefile). If the version numbers are inconsistent, you can modify the Makefile and use **make release** to rebuild.
+- Now, we check the Scala and Spark version of Apache toree. In our case, we use the latest releases **v0.2.0-incubating-rc3** https://github.com/apache/incubator-toree/releases. We can find this information in [Makefile](https://github.com/apache/incubator-toree/blob/v0.2.0-incubating-rc3/Makefile). If the version numbers are inconsistent, you can modify the Makefile and use **make release** to rebuild.
 
 ```sh
 ...
@@ -76,7 +76,7 @@ lish@lab-jupyter-m:~$
 ...
 ```
 
-- Let's get start to install Apache Toree!
+- Let's get started to install Apache Toree!
 ```sh
 lish@lab-jupyter-m:~$ sudo su -
 root@lab-jupyter-m:~# pip install https://dist.apache.org/repos/dist/dev/incubator/toree/0.2.0-incubating-rc3/toree-pip/toree-0.2.0.tar.gzCollecting https://dist.apache.org/repos/dist/dev/incubator/toree/0.2.0-incubating-rc3/toree-pip/toree-0.2.0.tar.gz
@@ -121,7 +121,7 @@ fully endorsed by the ASF.
 root@lab-jupyter-m:~# 
 ```
 
-- We successfully install the Apache Toree on Jupyter! Before starting Jupyter, for some reason ... our Internet can only connect 80/443 port ... Go to **VM instances** and choose the master machine.  
+- We successfully installed the Apache Toree on Jupyter! Before starting Jupyter, for some reason ... our Internet can only connect 80/443 port ... Go to **VM instances** and choose the master machine.  
 ![N|Solid](./screenshot/09.png)  
 
 - EDIT  
@@ -139,7 +139,7 @@ root@lab-jupyter-m:~# jupyter notebook --port 80 --allow-root --ip 0.0.0.0
 - We can connect with the **External IP**
 ![N|Solid](./screenshot/12.png)
 
-- Now, we can new a Apache Toree - Scala notebook in Jupyter!
+- Now, we can new an Apache Toree - Scala notebook in Jupyter!
 
 ![N|Solid](./screenshot/13.png)
 

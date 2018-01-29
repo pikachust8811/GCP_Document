@@ -8,7 +8,7 @@
 We want to run Spark with Scala language on Jupyter instead of Python to PySpark.
 
 ## 0x02 Install [Jupyter](http://jupyter.org/) on GCE
-- In the GCP project, we choose the **Dataproc => Clusters** to create the Apache Hadoop clusters.
+- In the GCP project, we choose the **Dataproc => Clusters** to create the Apache Hadoop clusters.
 ![N|Solid](./screenshot/01.png)
 
 - Click **CREATE CLUSTER**
@@ -16,7 +16,7 @@ We want to run Spark with Scala language on Jupyter instead of Python to PySpark
 
 - Here is our configuration with 1 master, 2 workers.  
 ![N|Solid](./screenshot/03.png)  
-P.S. You can click **Customize** to choose your machine CPU cores and Memory.
+P.S. You can click **Customize** to choose your machine CPU cores and Memory.
 
 - Next, Click the **Preemptible workers, bucket, network, version, initialization, & access options Create**
 ![N|Solid](./screenshot/04.png)
@@ -24,13 +24,13 @@ We want to run Spark with Scala language on Jupyter instead of Python to PySpark
 - In initialization actions add on bash shell that has been uploaded to Cloud Storage at gs://dataproc-initialization-actions/jupyter/jupyter.sh  
 ![N|Solid](./screenshot/05.png)
 
-- After click **Create** the cluster, we can see them successfully running on the dashboard.
+- After click **Create** the cluster, we can see them successfully running on the dashboard.
 ![N|Solid](./screenshot/06.png)
 
-Now, we are going to configuration Jupyter and install Apache Toree.
+Now, we are going to configuration Jupyter and install Apache Toree.
 
 ## 0x03 Install [Apachea Toree](https://toree.incubator.apache.org/)
-- Before installing the Apache Toree, we check our Scala and Spark version first. In the GCP project, we choose the **Compute Engine => VM instances** to use **ssh shell** into our master machine.
+- Before installing the Apache Toree, we check our Scala and Spark version first. In the GCP project, we choose the **Compute Engine => VM instances** to use **ssh shell** into our master machine.
 ![N|Solid](./screenshot/07.png)
 
 - Click the master machine ssh

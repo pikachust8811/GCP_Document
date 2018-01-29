@@ -9,31 +9,31 @@ We want to run Spark with Scala language on Jupyter instead of Python to PySpark
 
 ## 0x02 Install [Jupyter](http://jupyter.org/) on GCE
 - In the GCP project, we choose the **Dataproc => Clusters** to create the Apache Hadoop clusters.
-![N|Solid](/screenshot/01.png)
+![N|Solid](./screenshot/01.png)
 
 - Click **CREATE CLUSTER**
-![N|Solid](/screenshot/02.png)
+![N|Solid](./screenshot/02.png)
 
 - Here is our configuration with 1 master, 2 workers.  
-![N|Solid](/screenshot/03.png)  
+![N|Solid](./screenshot/03.png)  
 P.S. You can click **Customize** to choose your machine CPU cores and Memory.
 
 - Next, Click the **Preemptible workers, bucket, network, version, initialization, & access options Create**
-![N|Solid](/screenshot/04.png)
+![N|Solid](./screenshot/04.png)
 
 - In initialization actions add on bash shell that has been uploaded to Cloud Storage at gs://dataproc-initialization-actions/jupyter/jupyter.sh  
-![N|Solid](/screenshot/05.png)
+![N|Solid](./screenshot/05.png)
 
 - After click **Create** the cluster, we can see them successfully running on the dashboard.
-![N|Solid](/screenshot/06.png)
+![N|Solid](./screenshot/06.png)
 
 Now, we are going to configuration Jupyter and install Apache Toree.
 
 ## 0x03 Install [Apachea Toree](https://toree.incubator.apache.org/)
 - Before installing the Apache Toree, we check our Scala and Spark version first. In the GCP project, we choose the **Compute Engine => VM instances** to use **ssh shell** into our master machine.
-![N|Solid](/screenshot/07.png)
+![N|Solid](./screenshot/07.png)
 - Click the master machine ssh
-![N|Solid](/screenshot/08.png)
+![N|Solid](./screenshot/08.png)
 
 ### Scala version
 
@@ -121,13 +121,13 @@ root@lab-jupyter-m:~#
 ```
 
 - We successfully install the Apache Toree on Jupyter! Before starting Jupyter, for some reason ... our Internet can only connect 80/443 port ... Go to **VM instances** and choose the master machine.  
-![N|Solid](/screenshot/09.png)  
+![N|Solid](./screenshot/09.png)  
 
 - EDIT
-![N|Solid](/screenshot/10.png)  
+![N|Solid](./screenshot/10.png)  
 
 - Firewalls enable the **Allow HTTP traffic** and Save  
-![N|Solid](/screenshot/11.png)
+![N|Solid](./screenshot/11.png)
 
 0x04 Jupyter
 - starting the Jupyter
@@ -136,12 +136,12 @@ root@lab-jupyter-m:~# jupyter notebook --port 80 --allow-root --ip 0.0.0.0
 ```
 
 - We can connect with the **External IP**
-![N|Solid](/screenshot/12.png)
+![N|Solid](./screenshot/12.png)
 
 - Now, we can new a Apache Toree - Scala notebook in Jupyter!
 
-![N|Solid](/screenshot/13.png)
+![N|Solid](./screenshot/13.png)
 
 - Testing!
 
-![N|Solid](/screenshot/14.png)
+![N|Solid](./screenshot/14.png)

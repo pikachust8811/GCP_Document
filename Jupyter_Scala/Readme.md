@@ -32,6 +32,7 @@ We want to run Spark with Scala language on Jupyter instead of Python to PySpark
 ## 0x03 Install [Apachea Toree](https://toree.incubator.apache.org/)
 - Before installing the Apache Toree, we check our Scala and Spark version first. In the GCP project, we choose the **Compute Engine => VM instances** to use **ssh shell** into our master machine.
 ![N|Solid](./screenshot/07.png)
+
 - Click the master machine ssh
 ![N|Solid](./screenshot/08.png)
 
@@ -123,8 +124,8 @@ root@lab-jupyter-m:~#
 - We successfully install the Apache Toree on Jupyter! Before starting Jupyter, for some reason ... our Internet can only connect 80/443 port ... Go to **VM instances** and choose the master machine.  
 ![N|Solid](./screenshot/09.png)  
 
-- EDIT
-![N|Solid](./screenshot/10.png)  
+- EDIT  
+![N|Solid](./screenshot/10.png)
 
 - Firewalls enable the **Allow HTTP traffic** and Save  
 ![N|Solid](./screenshot/11.png)

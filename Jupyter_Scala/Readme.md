@@ -130,7 +130,7 @@ root@lab-jupyter-m:~#
 - Firewalls enable the **Allow HTTP traffic** and Save  
 ![N|Solid](./screenshot/11.png)
 
-0x04 Jupyter
+## 0x04 Jupyter
 - starting the Jupyter
 ```sh 
 root@lab-jupyter-m:~# jupyter notebook --port 80 --allow-root --ip 0.0.0.0

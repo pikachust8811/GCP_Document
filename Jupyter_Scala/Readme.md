@@ -146,3 +146,7 @@ root@lab-jupyter-m:~# jupyter notebook --port 80 --allow-root --ip 0.0.0.0
 - Testing!
 
 ![N|Solid](./screenshot/14.png)
+
+## 0x05 [Configuring Toree Options](https://toree.apache.org/docs/current/user/installation/#configuring-toree)
+- To add jar dependencies to toree, you need to setup `toree_opts` for toree kernel configuration, which file usually locates at `/usr/local/share/jupyter/kernels/apache_toree_scala/kernel.json`.  
+In the path `env.__TOREE_OPTS__`, add `--jar-dir /dir/to/your/jars` to specify the jars you wanted toree to load.

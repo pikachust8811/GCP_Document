@@ -79,7 +79,8 @@ lish@lab-jupyter-m:~$
 - Let's get started to install Apache Toree!
 ```sh
 lish@lab-jupyter-m:~$ sudo su -
-root@lab-jupyter-m:~# pip install https://dist.apache.org/repos/dist/dev/incubator/toree/0.2.0-incubating-rc3/toree-pip/toree-0.2.0.tar.gzCollecting https://dist.apache.org/repos/dist/dev/incubator/toree/0.2.0-incubating-rc3/toree-pip/toree-0.2.0.tar.gz
+root@lab-jupyter-m:~# pip install https://dist.apache.org/repos/dist/dev/incubator/toree/0.2.0-incubating-rc3/toree-pip/toree-0.2.0.tar.gz
+Collecting https://dist.apache.org/repos/dist/dev/incubator/toree/0.2.0-incubating-rc3/toree-pip/toree-0.2.0.tar.gz
   Downloading https://dist.apache.org/repos/dist/dev/incubator/toree/0.2.0-incubating-rc3/toree-pip/toree-0.2.0.tar.gz (25.8MB)
     100% |████████████████████████████████| 25.8MB 51kB/s 
 Requirement already satisfied (use --upgrade to upgrade): jupyter_core>=4.0 in /opt/conda/lib/python3.5/site-packages (from toree==0.2.0)
